@@ -15,7 +15,7 @@ namespace ScpMicroDamageReduction
         public void OnPlayerHurting(HurtingEventArgs ev)
         {
             if (ev.Attacker != ev.Player && ev.DamageHandler.Base is MicroHidDamageHandler &&
-                !Instance.Config.ScpDamageReduction.Contains(ev.Player.Role))
+                Instance.Config.ScpDamageReduction.Contains(ev.Player.Role))
             {
                 ev.Amount /= Instance.Config.ScpDamageReductionValue;
                 Log.Debug("SCP is on the list, damage is Micro");
