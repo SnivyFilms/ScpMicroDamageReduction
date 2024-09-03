@@ -11,7 +11,7 @@ namespace ScpMicroDamageReduction
         public override string Name { get; } = "SCP Micro Damage Reduction";
         public override string Author { get; } = "Vicious Vikki";
         public override string Prefix { get; } = "SMDR";
-        public override Version Version { get; } = new Version(1, 0, 1);
+        public override Version Version { get; } = new Version(1, 0, 2);
         public override Version RequiredExiledVersion { get; } = new Version(8, 9, 2);
 
         public EventHandlers eventHandlers;
